@@ -1,13 +1,15 @@
 const infoBtns = document.querySelectorAll(".info-dot");
 
-console.log(infoBtns);
+// Клик по кнопкам с подсказками
 
 for (let btn of infoBtns) {
-  console.log(btn);
   btn.addEventListener('click', showHint);
 }
 
 function showHint () {
-  console.log("Click!");
   this.parentNode.querySelector(".info-hint").classList.toggle("none");
 }
+
+// Закрываем подсказки по клику по всему документу
+
+document.addEventListener
