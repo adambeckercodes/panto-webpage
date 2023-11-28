@@ -58,22 +58,30 @@ position: relative;
   position: absolute;
   left: calc(296 * 100% / ( 1440 - 30 )); // 1440 = 100%; 296 = x // x = 296 * 100 / 1440
   top: calc(685 * 100% / ( 1075 - 9 )); // 1084
+
+  transform: translate(-10px, -10px)
 }
 
 .header__dot-vase {
   position: absolute;
   left: calc(114 * 100% / 1410);
   top: calc(753 * 100% / 1075);
+
+  transform: translate(-10px, -10px)
 }
 
 .header__dot-item {
   position: absolute;
   left: calc(790 * 100% / 1410);
   top: calc(788 * 100% / 1075);
+
+  transform: translate(-10px, -10px)
 }
 
 .header__dot-wall {
   position: absolute;
   right: calc(46 * 100% / 1410);
   top: calc(815 * 100% / 1075);
+
+  transform: translate(10px, -10px)
 }
