@@ -10,3 +10,11 @@
   font-weight: 500;
   font-size: 18px;
 }
+
+.nav-list__link {
+  transition: color .2s ease-in;
+
+  &:hover {
+    color: var(--accent);
+  }
+}
