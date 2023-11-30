@@ -11,10 +11,33 @@
   font-size: 18px;
 }
 
+.nav-list__item {
+  position: relative;
+}
+
 .nav-list__link {
-  transition: color .2s ease-in;
+  &--dropdown {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &::after {
+      content: url("./../img/icons/arrow-down.svg");
+      height: 18px;
+    }
+  }
+
+  transition: color 0.2s ease-in;
 
   &:hover {
     color: var(--accent);
   }
+}
+
+.nav-list__sub-nav {
+  position: absolute;
+
+  width: 100%;
+  left: 0;
+  top: calc(100% + 10px);
 }

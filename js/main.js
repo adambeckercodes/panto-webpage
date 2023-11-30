@@ -50,9 +50,7 @@ const tabsBtns = document.querySelectorAll("[data-tab]");
 const tabsProducts = document.querySelectorAll("[data-tab-value]");
 
 for (let btn of tabsBtns) {
-
   btn.addEventListener("click", function () {
-
     // Removing active class from all tab buttons
     for (let btn of tabsBtns) {
       btn.classList.remove("tab-controls__btn--active");
@@ -61,14 +59,21 @@ for (let btn of tabsBtns) {
     // Adding active class to the tab button
     this.classList.add("tab-controls__btn--active");
 
-    // Получаем значение категории товаров которые нцжно включить
-    console.log(this.dataset.tab);
-
     // Скрыть все товары
     for (let product of tabsProducts) {
-      product.classList.add("none");
+      x// Проверка на отображение всех товаров
+      if (this.dataset.tab === "all") {
+        product.classList.remove("none");
+      } else {
+        if (product.dataset.tabValue === this.dataset.tab) {
+          product.classList.remove("none");
+        } else {
+          product.classList.add("none");
+        }
+      }
     }
 
-
+    // Update Swiper
+    swiper.update();
   });
 }
