@@ -20,12 +20,8 @@
 }
 
 .benefits__title {
-  padding-top: 38px;
-
   max-width: 260px;
-  font-size: clamp(2rem, 1.702rem + 1.49vw, 2.625rem);
-  font-weight: 700;
-  text-wrap: balance;
+  padding-top: 38px;
 
   @include mobile () {
     padding-top: 0;

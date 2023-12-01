@@ -16,6 +16,12 @@ body {
   }
 }
 
+.title-2 {
+  font-size: clamp(2rem, 1.702rem + 1.49vw, 2.625rem);
+  font-weight: 700;
+  text-wrap: balance;
+}
+
 .none {
   display: none !important;
 }
