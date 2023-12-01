@@ -72,65 +72,14 @@
             <div class="cart__count">0</div>
           </a>
 
-          <button class="nav__btn">
+          <button id="open-mobile-nav-btn" class="nav__btn">
             <img src="./img/icons/mobile-nav.svg" alt="Open Navigation">
           </button>
 
         </nav>
       </div>
 
-      <div class="mobile-nav__wrapper">
-        <ul class="mobile-nav">
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link mobile-nav__link--dropdown" href="#!">
-              Furniture
-            </a>
-              <ul class="mobile-sub-nav">
-                <li class="mobile-sub-nav__item">
-                  <a href="#!" class="mobile-sub-nav__link">
-                    Chairs
-                  </a>
-                </li>
-                <li class="mobile-sub-nav__item">
-                  <a href="#!" class="mobile-sub-nav__link">
-                    Sofas
-                  </a>
-                </li>
-                <li class="mobile-sub-nav__item">
-                  <a href="#!" class="mobile-sub-nav__link">
-                    Beds
-                  </a>
-                </li>
-                <li class="mobile-sub-nav__item">
-                  <a href="#!" class="mobile-sub-nav__link">
-                    Lamps
-                  </a>
-                </li>
-              </ul>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#!">
-              Shop
-            </a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#!">
-              About Us
-            </a>
-          </li>
-          <li class="mobile-nav__item">
-            <a class="mobile-nav__link" href="#!">
-              Contact
-            </a>
-          </li>
-        </ul>
-
-        <button class="close-btn">
-          
-        </button>
-      </div>
-
-      <div class="header__content none">
+      <div class="header__content">
         <h1 class="header__title">
           Make your interior more minimalistic & modern
         </h1>
@@ -149,7 +98,7 @@
         </div>
       </div>
 
-      <div class="header__dot-sofa none">
+      <div class="header__dot-sofa">
         <button class="info-dot">
           <div class="info-dot__circle"></div>
           <div class="info-dot__radius"></div>
@@ -173,7 +122,7 @@
         </div>
       </div>
 
-      <div class="header__dot-vase none">
+      <div class="header__dot-vase">
         <button class="info-dot">
           <div class="info-dot__circle"></div>
           <div class="info-dot__radius"></div>
@@ -197,7 +146,7 @@
         </div>
       </div>
 
-      <div class="header__dot-item none">
+      <div class="header__dot-item">
         <button class="info-dot">
           <div class="info-dot__circle"></div>
           <div class="info-dot__radius"></div>
@@ -221,7 +170,7 @@
         </div>
       </div>
 
-      <div class="header__dot-wall none">
+      <div class="header__dot-wall">
         <button class="info-dot">
           <div class="info-dot__circle"></div>
           <div class="info-dot__radius"></div>
@@ -246,10 +195,11 @@
       </div>
 
     </div>
+
   </header>
 
   <main>
-    <section class="benefits none">
+    <section class="benefits">
       <div class="container">
         <div class="benefits__grid">
           <h2 class="benefits__title">
@@ -297,7 +247,7 @@
       </div>
     </section>
 
-    <section class="products none">
+    <section class="products">
       <div class="container">
         <h2 class="products__title">
           Best Selling Product
@@ -1442,7 +1392,7 @@
     </section>
   </main>
 
-  <footer class="footer none">
+  <footer class="footer">
     <div class="container container--small">
 
       <!-- footer grid -->
@@ -1531,6 +1481,71 @@
       <!-- //footer row -->
     </div>
   </footer>
+
+  <!-- Mobile Navigation -->
+  <div id="mobile-nav" class="mobile-nav__wrapper">
+
+    <div class="mobile-nav__header">
+      <a href="#!" class="mobile-cart">
+        <div class="cart__link">
+          <img class="cart__img" src="./img/icons/cart.svg" alt="Cart">
+          <div class="cart__count">0</div>
+        </div>
+        Cart
+      </a>
+
+      <button id="close-mobile-nav-btn" class="mobile-nav__btn-close">
+        <img src="./img//icons/close.svg" alt="Close">
+      </button>
+    </div>
+
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link mobile-nav__link--dropdown" href="#!">
+          Furniture
+        </a>
+        <ul class="mobile-sub-nav">
+          <li class="mobile-sub-nav__item">
+            <a href="#!" class="mobile-sub-nav__link">
+              Chairs
+            </a>
+          </li>
+          <li class="mobile-sub-nav__item">
+            <a href="#!" class="mobile-sub-nav__link">
+              Sofas
+            </a>
+          </li>
+          <li class="mobile-sub-nav__item">
+            <a href="#!" class="mobile-sub-nav__link">
+              Beds
+            </a>
+          </li>
+          <li class="mobile-sub-nav__item">
+            <a href="#!" class="mobile-sub-nav__link">
+              Lamps
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#!">
+          Shop
+        </a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#!">
+          About Us
+        </a>
+      </li>
+      <li class="mobile-nav__item">
+        <a class="mobile-nav__link" href="#!">
+          Contact
+        </a>
+      </li>
+    </ul>
+
+  </div>
+<!-- // Mobile Navigation -->
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>

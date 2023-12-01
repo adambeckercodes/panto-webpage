@@ -61,7 +61,7 @@ for (let btn of tabsBtns) {
 
     // Скрыть все товары
     for (let product of tabsProducts) {
-      x// Проверка на отображение всех товаров
+      x; // Проверка на отображение всех товаров
       if (this.dataset.tab === "all") {
         product.classList.remove("none");
       } else {
@@ -77,3 +77,16 @@ for (let btn of tabsBtns) {
     swiper.update();
   });
 }
+
+// Mobile Nav
+const mobileNavOpenBtn = document.querySelector("#open-mobile-nav-btn");
+const mobileNavCloseBtn = document.querySelector("#close-mobile-nav-btn");
+const mobileNav = document.querySelector("#mobile-nav");
+
+mobileNavOpenBtn.onclick = function () {
+  mobileNav.classList.add("mobile-nav__wrapper--open");
+};
+
+mobileNavCloseBtn.onclick = function () {
+  mobileNav.classList.remove("mobile-nav__wrapper--open");
+};
