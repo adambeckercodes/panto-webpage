@@ -14,6 +14,13 @@
   a {
     color: var(--header-text-color);
   }
+
+  @include mobile () {
+    padding-top: 20px;
+    padding-bottom: 240px;
+    background-position: center;
+    aspect-ratio: unset ;
+  }
 }
 
 .header__nav {
